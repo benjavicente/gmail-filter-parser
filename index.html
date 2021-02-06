@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GMail filter helper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script type="module" src="./parser.js"></script>
+    <script type="module" src="./helpers.js"></script>
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="title">
+        <h1>GMail filter helper</h1>
+      </div>
+      <form id="gist_form">
+        <input
+          type="text"
+          name="gist"
+          id="gist_input"
+          accept="[a-z0-9]+"
+          required
+          placeholder="gist_id"
+        />
+        <input type="submit" id="gist_submit" value="get filter from gist" />
+      </form>
+      <div class="filter_box">
+        <div class="filter_input" contenteditable="true" spellcheck="false"></div>
+        <div class="filter_output">
+          <div class="filter_errors"></div>
+          <div class="filter_result"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
