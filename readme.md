@@ -12,7 +12,18 @@ deno run --allow-write util/gen_diagram.js
 ## GH-Pages Branch
 
 ```bash
-git
+# Run them one-by-one
+git worktree add --detach temp
+cd temp
+git branch -D gh-pages
+git checkout --orphan gh-pages -f
+git rm -rf .
+cp ../src/* .
+cp ../docs . -r
+git add .
+git commit -m "update"
+cd ..
+git worktree remove temp
 ```
 
 <!-- Links -->
