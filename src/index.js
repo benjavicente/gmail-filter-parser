@@ -62,8 +62,6 @@ function check_syntax(input_box) {
   const errors_box = out_box.getElementsByClassName("filter_errors")[0];
   const result_box = out_box.getElementsByClassName("filter_result")[0];
   const result = parse(input_box.innerText);
-
-  // TODO: mejor formato
   while (result_box.lastChild) {
     result_box.removeChild(result_box.lastChild);
   }
@@ -80,7 +78,7 @@ function check_input(event) {
   const selection = window.getSelection();
   if (event.key == "Tab") {
     if (selection.baseOffset == selection.focusOffset) {
-      // TODO: ver si se puede awadir 4 espacios en Tab
+      // TODO: add spaces
     }
     event.preventDefault();
   }
@@ -112,7 +110,7 @@ function add_result(box, elements) {
         element_box.appendChild(sub_except);
         let sub_except_elements = document.createElement("div");
         if (!Array.isArray(element.except)) {
-          // Iterable para entrar a la recusión
+          // Iterable for recursion
           element.except = [element.except];
         }
         add_result(sub_except_elements, element.except);

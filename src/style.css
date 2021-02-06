@@ -6,14 +6,16 @@
 body {
   height: max-content;
   min-height: 100vh;
-  background: #4b7386;
+  background: linear-gradient(90deg, #70cf96, #84d1d1);
+  margin: 0;
+  padding: 15px;
   /* Center the card */
   display: flex;
   justify-content: center;
 }
 
 .main {
-  background: #f0f3f2;
+  background: #fcfdfd;
   padding: 1em;
   height: max-content;
   width: 500px;
@@ -63,5 +65,5 @@ body {
   margin-top: 5px;
   padding-left: 10px;
   min-height: 10px;
-  background-color: #4b738656;
+  background-color: #258ebe27;
 }

@@ -4,6 +4,8 @@ const createToken = chevrotain.createToken;
 const Parser = chevrotain.EmbeddedActionsParser;
 
 // ----------------- Lexer -----------------
+// A space DOES afect the filter in some ocasions, but
+// adding this property will make the parser more complex
 const WhiteSpace = createToken({
   name: "WhiteSpace",
   pattern: / +/,
