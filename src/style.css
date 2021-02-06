@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: max-content;
+  min-height: 100vh;
+  background: #4b7386;
+  /* Center the card */
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  background: #f0f3f2;
+  padding: 1em;
+  height: max-content;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.title {
+  text-align: center;
+}
+
+#gist_form {
+  padding: 5px 0;
+  display: flex;
+}
+
+#gist_input {
+  min-width: 150px;
+  width: 100%;
+}
+
+.filter_input {
+  background: #f7f7f7;
+  border: #7ba3b662 solid 2px;
+  font-family: monospace;
+  min-height: 200px;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.filter_input:focus {
+  border: #7ba3b6 solid 2px;
+  background: #ffffff;
+  outline: none;
+}
+
+.filter_errors {
+  background: red;
+  color: white;
+}
+
+.filter_result {
+  background-color: #dceef7;
+}
+
+.element {
+  margin-top: 5px;
+  padding-left: 10px;
+  min-height: 10px;
+  background-color: #4b738656;
+}
